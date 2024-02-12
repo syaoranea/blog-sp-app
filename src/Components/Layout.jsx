@@ -1,13 +1,15 @@
 
-import { Rodape } from './Rodape.jsx'
-import { Topo } from './Topo.jsx'
+import { Rodape } from './Rodape.jsx';
+
 import PropTypes from 'prop-types';
+
+import { Navheader } from './NavHeader.jsx';
 
 export const Layout = ({ children }) => {
   return (
     <>
     
-      <Topo/>
+      <Navheader/>
       { children }
       <Rodape/>
     </>

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Home } from './Pages/home';
 import { Post } from './Pages/Post';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
