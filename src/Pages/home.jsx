@@ -2,7 +2,8 @@ import { useEffect, useState } from "react"
 import { Layout } from "../Components/Layout.jsx"
 import { client } from "../lib/createClient.js"
 import { Link } from "react-router-dom"
-import imgagemEscolhida from '../assets/img/logo-light.png'
+import './home.css'
+import imgagemEscolhida from '../assets/img/heading-9.jpg'
 export const Home = () => {
     const [categories, setCategories] = useState([]);
     const [posts, setPosts] = useState([]);
@@ -42,7 +43,8 @@ export const Home = () => {
                     </div> 
                 </div>
             </section>
-            <section id="content-section" class="page">
+            <br/>
+            <section id="content-section" class="page pagegeek">
                 <div class="container max-width-1300">
                     <div class="row">
                         <div class="col-md-12">
@@ -53,15 +55,16 @@ export const Home = () => {
                                             <div class="blog-list-items-wrap">
                                                 {posts.map((post) => (
                                                 <div class="blog-list-item" key={post.sys.id}>
+                                                    <img class="bli-image bg-image imagem " key={post.sys.id} src={post.fields.imagem.content.value} />
                                                     <div class="bli-info">
                                                         <h2 class="bli-title">{post.fields.title}</h2>
                                                         <div class="bli-meta">
-                                                            <span  class="article-time"> aaaaaaaa</span> - by:
-                                                            <span  class="article-author">aaaaaaaaa</span> - in
-                                                            <span  class="article-category">#aaaaaaaaaa</span>
+                                                            <a class="article-time">{post.fields.data}</a> - by: 
+                                                            <a class="article-author">{post.fields.autor}</a> - in
+                                                            <a class="article-category"> #{post.fields.blogCategory.fields.name}</a>
                                                         </div>
                                                         <p class="bli-desc">
-                                                            {post.fields.title}
+                                                            {post.fields.description}
                                                             ...</p>
                                                         <div class="bli-button">
                                                             <Link to={`/post/${post.fields.postSlug}`} class="btn btn-dark btn-rounded-5x btn-sm">Leia mais</Link>
@@ -178,11 +181,7 @@ export const Home = () => {
                     </ul>
                     </nav>
                 </div>
-                <div class="col-md-4">
-                    <div class="pagination-info padding-top-15">
-                        <span>MOSTRAR PÁGINAs 1 of 8</span>
-                    </div>
-                </div> 
+               
             </div>
         </Layout>
     )

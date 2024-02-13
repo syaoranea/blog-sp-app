@@ -1,9 +1,13 @@
 import './Navheader.css'
-import imgagemEscolhida from '../assets/img/logo-light.png'
+import imgagemEscolhida from '../assets/img/loguin.png'
 export const Navheader = () => { 
   return (
     <header id="header" class="fixed-top">
   <div class="header-inner">
+  <div id="logo">
+      <a href="index.html" class="logo-dark"><img src={imgagemEscolhida} alt="logo"/></a>
+      <a href="index.html" class="logo-light"><img src={imgagemEscolhida} alt="logo"/></a>
+    </div>
 
     <nav class="navbar navbar-default">
       <div class="navbar-inner">
@@ -22,31 +26,31 @@ export const Navheader = () => {
 
             <li class="dropdown dropdown-hover active">
               <a  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home
-                <span class="caret-2"><i class="fas fa-chevron-down"></i></span>
+                <span class="caret-2"></span>
               </a>
             </li>
 
             <li class="dropdown dropdown-hover">
               <a  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria
-                <span class="caret-2"><i class="fas fa-chevron-down"></i></span>
+                <span class="caret-2"></span>
               </a>
             </li>
 
             <li class="dropdown dropdown-hover">
               <a  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos
-                <span class="caret-2"><i class="fas fa-chevron-down"></i></span>
+                <span class="caret-2"></span>
               </a>
             </li>
 
             <li class="dropdown dropdown-hover">
               <a  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Noticias
-                <span class="caret-2"><i class="fas fa-chevron-down"></i></span>
+                <span class="caret-2"></span>
               </a>
             </li>
 
             <li class="dropdown dropdown-hover dropdown-menu-right">
               <a  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contato
-                <span class="caret-2"><i class="fas fa-chevron-down"></i></span>
+                <span class="caret-2"></span>
               </a>
             </li>
           
