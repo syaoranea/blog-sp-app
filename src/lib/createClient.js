@@ -1,8 +1,6 @@
 import * as contentful from 'contentful'
 
-import { spaceeId, accessToken } from '../constants'
-
 export const client = contentful.createClient({
-    space: spaceeId,
-    accessToken: accessToken,
+    space: process.env.SPACE_ID,
+    accessToken: process.env.ACCES_TOKEN,
 });
