@@ -1,12 +1,9 @@
-import imgagemEscolhida from '../assets/img/loguin.png'
+
 export const Navheader = () => { 
   return (
     <header id="header" className="fixed-top">
   <div className="header-inner">
-  <div id="logo">
-      <a className="logo-dark"><img src={imgagemEscolhida} alt="logo"/></a>
-      <a  className="logo-light"><img src={imgagemEscolhida} alt="logo"/></a>
-    </div>
+
 
     <nav className="navbar navbar-default">
       <div className="navbar-inner">
