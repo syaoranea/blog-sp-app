@@ -2,55 +2,55 @@ import './Navheader.css'
 import imgagemEscolhida from '../assets/img/loguin.png'
 export const Navheader = () => { 
   return (
-    <header id="header" class="fixed-top">
-  <div class="header-inner">
+    <header id="header" className="fixed-top">
+  <div className="header-inner">
   <div id="logo">
-      <a href="index.html" class="logo-dark"><img src={imgagemEscolhida} alt="logo"/></a>
-      <a href="index.html" class="logo-light"><img src={imgagemEscolhida} alt="logo"/></a>
+      <a href="index.html" className="logo-dark"><img src={imgagemEscolhida} alt="logo"/></a>
+      <a href="index.html" className="logo-light"><img src={imgagemEscolhida} alt="logo"/></a>
     </div>
 
-    <nav class="navbar navbar-default">
-      <div class="navbar-inner">
+    <nav className="navbar navbar-default">
+      <div className="navbar-inner">
 
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+        <div className="navbar-header">
+          <button type="button" classNameName="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+            <span className="sr-only">Toggle navigation</span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
           </button>
         </div>
 
-        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
+        <div className="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul className="nav navbar-nav navbar-right">
 
-            <li class="dropdown dropdown-hover active">
-              <a  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home
-                <span class="caret-2"></span>
+            <li className="dropdown dropdown-hover active">
+              <a  className="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home
+                <span className="caret-2"></span>
               </a>
             </li>
 
-            <li class="dropdown dropdown-hover">
-              <a  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria
-                <span class="caret-2"></span>
+            <li className="dropdown dropdown-hover">
+              <a  className="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria
+                <span className="caret-2"></span>
               </a>
             </li>
 
-            <li class="dropdown dropdown-hover">
-              <a  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos
-                <span class="caret-2"></span>
+            <li className="dropdown dropdown-hover">
+              <a  className="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos
+                <span className="caret-2"></span>
               </a>
             </li>
 
-            <li class="dropdown dropdown-hover">
-              <a  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Noticias
-                <span class="caret-2"></span>
+            <li className="dropdown dropdown-hover">
+              <a  className="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Noticias
+                <span className="caret-2"></span>
               </a>
             </li>
 
-            <li class="dropdown dropdown-hover dropdown-menu-right">
-              <a  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contato
-                <span class="caret-2"></span>
+            <li className="dropdown dropdown-hover dropdown-menu-right">
+              <a  className="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contato
+                <span className="caret-2"></span>
               </a>
             </li>
           
