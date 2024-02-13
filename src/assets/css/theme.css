@@ -5853,3 +5853,21 @@ label {
 	background-position: 50% 50%;
 }
 
+.topo-img {
+	background-position: 50% 50%;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.image-container {
+	position: relative;
+}
+
+.container-blog {
+	margin-top: 100px;
+	padding: 40px;
+}
+
+.paginador {
+	display: flex;
+	justify-content: center;
+}

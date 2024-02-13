@@ -24,7 +24,7 @@ export const Post = () => {
     }, []);
     return (
         <Layout>
-            {post ? <div className="container">
+            {post ? <div className="container container-blog">
                 <div className="row">
                     <div className="col-12">
                         <h1>{post.fields.title}</h1>
