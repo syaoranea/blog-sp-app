@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { Layout } from "../Components/Layout.jsx"
 import { client } from "../lib/createClient.js"
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
-import { useParams } from "react-router-dom/cjs/react-router-dom.min.js";
+import { useParams, Link } from "react-router-dom";
 
 //const post_slug = "nosso-primeiro-post";
 
@@ -12,16 +12,16 @@ export const Post = () => {
 
     useEffect(() => {
         client
-            .getEntry({
-                "postSlug": slug,
-                content_type: "blogPostagem",
+            .getEntries({
+                "fields.postSlug": slug,
+                content_type: 'blogPostagem',
             })
             .then(function (entries) {
-                console.log(entries);
-                setPost(entries || null);
-            })
-            
+                console.log("post", entries);
+                setPost(entries.items[0] || null);
+            });
     }, []);
+
     return (
         <Layout>
             {post ? <div className="container container-blog">
@@ -31,7 +31,9 @@ export const Post = () => {
                     </div>
                     <div dangerouslySetInnerHTML={{__html: documentToHtmlString(post.fields.postBody)}}></div>
                     <div className="mt-1">
-                        <a href="https://main--animaxblogg.netlify.app/" className="btn btn-primary">Voltar</a>
+                    <Link to="/" className="btn btn-primary">
+                        Voltar para Home
+                    </Link>
                     </div>
                 </div>
             </div> : <div>carregando</div>}

@@ -6,7 +6,7 @@ import { spaceeId, accessToken } from '../constants'
 export const client = contentful.createClient({
   
     // eslint-disable-next-line no-undef
-    space: import.meta.env.VITE_CONTENTFUL_SPACE_ID,
+    space: spaceeId,
     // eslint-disable-next-line no-undef
-    accessToken: import.meta.env.VITE_CONTENTFUL_ACCESS_TOKEN
+    accessToken: accessToken
 });
