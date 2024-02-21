@@ -31,7 +31,7 @@ export const Post = () => {
                     </div>
                     <div dangerouslySetInnerHTML={{__html: documentToHtmlString(post.fields.postBody)}}></div>
                     <div className="mt-1">
-                        <a href="/home" className="btn btn-primary">Voltar</a>
+                        <a href="https://main--animaxblogg.netlify.app/" className="btn btn-primary">Voltar</a>
                     </div>
                 </div>
             </div> : <div>carregando</div>}
