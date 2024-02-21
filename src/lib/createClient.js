@@ -1,6 +1,12 @@
 import * as contentful from 'contentful'
+import { spaceeId, accessToken } from '../constants'
+
+// Use a variável accessToken conforme necessário no seu código
 
 export const client = contentful.createClient({
-    space: process.env.SPACE_ID,
-    accessToken: process.env.SPACE_ID
+  
+    // eslint-disable-next-line no-undef
+    space: spaceeId,
+    // eslint-disable-next-line no-undef
+    accessToken: accessToken
 });

@@ -44,9 +44,9 @@ export const Home = () => {
         };
 
         fetchData();
-        [currentPage];
+        
     
-    }, [])//array vazio para executar apenas uma vez
+    }, [currentPage])//array vazio para executar apenas uma vez
 
 
     return (
@@ -84,7 +84,9 @@ export const Home = () => {
                                                     </div>
                                                     
                                                     <div className="bli-info">
-                                                        <h2 className="bli-title">{post.fields.title}</h2>
+                                                    <Link to={`/post/${post.fields.postSlug}`} >
+                                                        <h2 className="bli-title"><a>{post.fields.title}</a></h2>
+                                                    </Link>
                                                         <div className="bli-meta">
                                                             <a className="article-time">{post.fields.data}</a> - by: 
                                                             <a className="article-author">{post.fields.autor}</a> - in
@@ -124,7 +126,7 @@ export const Home = () => {
                                                          
                                                             <ul className="list-unstyled">
                                                                 {categories.map((category) => (
-                                                                    <li key={category.sys.id}>{category.fields.name}</li>
+                                                                    <li key={category.sys.id}><a>{category.fields.name}</a></li>
                                                                 ))}
                                                             </ul>
                                                         </div>
@@ -188,11 +190,21 @@ export const Home = () => {
                 <div className="col-md-8">
                     <nav className="pagination-wrap">
                     <ul className="pagination">
+                    <li>
+                        <a href="" aria-label="Previous" onClick={() => paginate(1)}>
+                            <span aria-hidden="true">First</span>
+                        </a>
+                    </li>
                     {Array.from({ length: Math.ceil(data.length / itemsPerPage) }).map((_, index) => (
-    <button key={index + 1} onClick={() => paginate(index + 1)}>
-        {index + 1}
-    </button>
+                    <li key={index + 1} onClick={() => paginate(index + 1)}>
+                    <a> {index + 1}</a>
+                    </li>
 ))}
+                    <li>
+                        <a href="" aria-label="Next" onClick={() => paginate(4)}>
+                            <span aria-hidden="true">Last</span>
+                        </a>
+                    </li>
                     </ul>
                     </nav>
                 </div>
