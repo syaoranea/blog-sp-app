@@ -138,9 +138,9 @@ export const Home = () => {
                                                                 <li>
                                                                     <a href="blog-single-sidebar-right.html" className="post-thumb bg-image"></a>
                                                                     <div className="post-data">
-                                                                        <h5 className="post-title"><a href="blog-single-sidebar-right.html">title</a></h5>
-                                                                        <span className="author">By: autor</span>
-                                                                        <span className="date">data</span>
+                                                                        <h5 className="post-title"><a href="blog-single-sidebar-right.html">5 ANIMES DE FICÇÃO CIENTÍFICA</a></h5>
+                                                                        <span className="author">By: Eduardo</span>
+                                                                        <span className="date">20/02/2022</span>
                                                                     </div>
                                                                 </li>
                                                             </ul>
