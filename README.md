@@ -9,12 +9,7 @@
 Este é o repositório oficial do Blog Animax, um aplicativo de blog desenvolvido usando React + Vite e integrado com o Contentful para gerenciar o conteúdo. O Blog Animax oferece uma experiência de leitura envolvente, com 5 categorias exclusivas e paginação para facilitar a navegação.
 
 ## Layout web
-![Web 1](https://github.com/acenelio/assets/raw/main/sds1/web1.png)
-
-![Web 2](https://github.com/acenelio/assets/raw/main/sds1/web2.png)
-
-## Modelo conceitual
-![Modelo Conceitual](https://github.com/acenelio/assets/raw/main/sds1/modelo-conceitual.png)
+![Web 1](https://github.com/syaoranea/blog-sp-app/blob/main/src/assets/img/blog.png)
 
 # Tecnologias utilizadas
 
